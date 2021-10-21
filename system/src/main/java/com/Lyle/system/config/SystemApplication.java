@@ -1,4 +1,4 @@
-package com.Lyle.system;
+package com.Lyle.system.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
