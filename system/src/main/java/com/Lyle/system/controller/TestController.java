@@ -1,7 +1,7 @@
 package com.Lyle.system.controller;
 
-import com.Lyle.system.domain.Test;
-import com.Lyle.system.service.TestService;
+import com.Lyle.server.domain.Test;
+import com.Lyle.server.service.TestService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
