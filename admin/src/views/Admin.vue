@@ -481,6 +481,18 @@ export default {
   mounted() {
     $('body').removeClass('login-layout light-login');
     $('body').attr('class', 'no-skin');
+    this.activeSidebar(_this.$route.name.replace("/","-")+"-sidebar");
+  },
+  watch:{
+    $route:{
+      handler: function (val, oldVal) {
+        console.log("---->页面跳转:", val, oldVal);
+        let _this = this;
+        _this.$nextTick(function () {
+          _this.activeSidebar(_this.$route.name.replace("/","-")+"-sidebar");
+        })
+      }
+    }
   },
   methods: {
     // 菜单激活样式：id是当前点击菜单的id
