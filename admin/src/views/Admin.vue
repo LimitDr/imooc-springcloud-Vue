@@ -481,7 +481,7 @@ export default {
   mounted() {
     $('body').removeClass('login-layout light-login');
     $('body').attr('class', 'no-skin');
-    this.activeSidebar(_this.$route.name.replace("/","-")+"-sidebar");
+    this.activeSidebar(this.$route.name.replace("/","-")+"-sidebar");
   },
   watch:{
     $route:{
