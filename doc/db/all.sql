@@ -6,5 +6,5 @@ create table `chapter`(
     primary key (`id`)
 ) engine = innodb default charset = utf8mb4 comment '大章';
 
-insert into `test` (`id`, `name`) values (1, '测试');
+insert into `chapter` (`id`, `name`) values (1, '测试');
 insert into `test` (`id`, `name`) values (2, '测试2');
